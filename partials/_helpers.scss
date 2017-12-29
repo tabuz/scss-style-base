@@ -57,9 +57,11 @@
 	max-width: 1900px;
 	height: 100%;
 }
-.wrapper {
-	position: relative;
-	z-index: 100;
+.center-wrapper {
+    height: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: center;
 }
 .row-equal-height {
 	display: flex;

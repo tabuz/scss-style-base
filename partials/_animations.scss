@@ -35,7 +35,11 @@
     filter: blur(0px);
   }
 }
-@keyframes fadeIn {
+.fade-in-anim {
+    animation: fade-in 5s 1;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
