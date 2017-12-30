@@ -1,0 +1,29 @@
+.home {
+	.carousel {
+		height: 100%;
+		position: relative;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+		&.--content {
+			position: absolute;
+		    top: 0;
+		    width: 100%;
+	        display: flex;
+    		justify-content: center;
+    		align-items: center;
+
+    		h1{	
+    			transform-origin: center center;
+    			position: absolute;
+			    margin: 0 auto;
+    		}
+		}
+
+		&.--bg {
+			background-image: url('../img/bg.jpg');
+			filter: brightness(15%);
+		}
+	}
+}

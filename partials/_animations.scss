@@ -35,8 +35,12 @@
     filter: blur(0px);
   }
 }
-.fade-in-anim {
-    animation: fade-in 5s 1;
+.fade-in-slow {
+    animation: fade-in 3s 1;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.fade-in-fast {
+    animation: fade-in 1s 1;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 @keyframes fade-in {

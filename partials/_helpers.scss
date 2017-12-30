@@ -10,8 +10,18 @@
 .secondary-gb {
 	background-color: $black;
 }
-
-
+.green {
+	background-color: $green !important;
+}
+.green-darker {
+	background-color: #05612a;
+}
+.border-thin {
+	border: 1px solid $green;
+}
+.border-thick {
+	border: 5px solid $green;
+}
 
 
 // Display
@@ -31,8 +41,8 @@
     justify-content: center;
     align-items: center;
 }
-.nav-wrapper {
-	z-index: 200;
+.wrapper {
+	position: relative;
 }
 .display-flex-row {
 	display: flex;
@@ -50,6 +60,10 @@
 	align-content: center;
 	max-width: 1100px;
 	margin: 0 auto;
+}
+.container {
+	max-width: 1100px;
+	padding: $base-padding;
 }
 .content-wrapper{
 	position: relative;
@@ -131,4 +145,7 @@
 }
 .text-align-center {
 	text-align: center;
+}
+.text-actent {
+	color: $yellow;
 }
