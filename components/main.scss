@@ -1,11 +1,27 @@
 html {
-	overflow: hidden;
+	min-height: 100%vh !important;
 }
 body {
 	background-color: $yellow;
+	background-repeat: no-repeat;
+	background-image:
+		url('../img/hands-bg.png'),
+		url('../img/jump-bg.png'),
+		url('../img/kick-bg.png');
+	background-position:
+		15% bottom,
+		50% bottom,
+		85% bottom;
 	overflow-y: hidden;
 }
-main {
-	height: 100vh;
-	position: relative;
+main{
+	height: 100%;
+	position: fixed;
+	top: $navbar-height;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+section {
+	min-height: 92%;
 }

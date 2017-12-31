@@ -94,6 +94,12 @@
 .padding {
 	padding: $base-padding !important;
 }
+.padding-big {
+	padding: 1.5rem 1.5rem;
+}
+.padding-huge {
+	padding: 6rem 2.5rem;
+}
 .double-padding {
 	padding: 2 * $base-padding !important;
 }
