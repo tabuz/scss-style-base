@@ -26,7 +26,9 @@
 
 // Display
 
-
+.block {
+	display: block;
+}
 .vh-height {
 	height: 100vh;
 }
@@ -133,6 +135,9 @@
 .margin-auto {
 	margin: 0 auto;
 }
+.margin-top {
+	margin-top: 1rem;
+}
 
 
 
@@ -151,6 +156,9 @@
 }
 .text-align-center {
 	text-align: center;
+}
+.text-align-right {
+	text-align: right;
 }
 .text-actent {
 	color: $yellow;

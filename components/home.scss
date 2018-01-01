@@ -26,4 +26,10 @@
 			filter: brightness(15%);
 		}
 	}
+	.info-background {
+		background-image: url('../img/oficina_photo.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+		height: 12rem;
+	}
 }
