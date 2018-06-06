@@ -8,9 +8,12 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  font-family: Montserrat !important;
+}
 h1, h2, h3, h4, h5, h6, span, p {
 	margin: 0;
-	padding: 0;
+  padding: 0;
 }
 
 .section-header {
@@ -23,4 +26,7 @@ h1, h2, h3, h4, h5, h6, span, p {
     color: $black;
     border-bottom: 1px solid $black;
   }
+}
+p {
+  font-size: 1rem;
 }

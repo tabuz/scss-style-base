@@ -1,35 +1,56 @@
 .home {
-	.carousel {
-		height: 100%;
-		position: relative;
-		background-size: cover;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
+    background: radial-gradient(ellipse at center, rgba(249,213,13,0.66) 0%,rgba(18,129,63,0.98) 100%), url('/assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 
-		&.--content {
-			position: absolute;
-		    top: 0;
-		    width: 100%;
-	        display: flex;
-    		justify-content: center;
-    		align-items: center;
+    min-height: 90vh;
 
-    		h1{	
-    			transform-origin: center center;
-    			position: absolute;
-			    margin: 0 auto;
-    		}
-		}
+    .logo {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
 
-		&.--bg {
-			background-image: url('../img/bg.jpg');
-			filter: brightness(15%);
-		}
-	}
-	.info-background {
-		background-image: url('../img/oficina_photo.jpg');
-		background-size: cover;
-		background-position: 50% 50%;
-		height: 12rem;
-	}
+        img {
+            transform: scale(0.95);
+            margin-bottom: 0.6rem;
+        }
+        span {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            position: relative;
+            left: -19px;
+        }
+        p {
+            font-size: 1.3rem;
+            margin-top: -0.3rem;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.nav-wrapper-custom {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-100%);
+
+    li {
+        background-color: $primary-color;
+        display: inline;
+        padding: 2rem 3rem;
+        transition: all 0.3s ease-in;
+        margin: -3px;
+
+        &:hover {
+            background-color: rgb(75, 75, 75);
+        }
+
+        a {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+    }       
 }

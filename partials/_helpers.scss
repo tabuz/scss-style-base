@@ -1,6 +1,4 @@
 // Base
-
-
 .primary {
 	color: $base;
 } 
@@ -25,7 +23,6 @@
 
 
 // Display
-
 .block {
 	display: block;
 }
@@ -103,10 +100,10 @@
 	padding: 6rem 2.5rem;
 }
 .double-padding {
-	padding: 2 * $base-padding !important;
+	padding: 2rem 3.5rem !important;
 }
 .double-padding-top {
-	padding: 2 * $base-padding !important;
+	padding-top: 2rem !important;
 }
 .no-padding {
 	padding: 0 !important;
@@ -136,11 +133,11 @@
 	margin: 0 auto;
 }
 .margin-top {
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 }
-
-
-
+.margin-top-double {
+	margin-top: 3rem;
+}
 
 // Text
 
@@ -162,4 +159,14 @@
 }
 .text-actent {
 	color: $yellow;
+}
+
+.border-sides {
+	border: 1px solid $yellow;
+	border-top: none;
+	border-bottom: none;
+}
+
+.content-wrapper {
+	padding: 1.5rem;
 }
