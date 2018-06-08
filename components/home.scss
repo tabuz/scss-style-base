@@ -12,7 +12,7 @@
         text-transform: uppercase;
 
         img {
-            transform: scale(0.95);
+            transform: scale(0.90);
             margin-bottom: 0.6rem;
         }
         span {
@@ -22,11 +22,11 @@
             left: -19px;
         }
         p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-top: -0.3rem;
             line-height: 1;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-weight: 400;
+            letter-spacing: 3px;
         }
     }
 }
@@ -53,4 +53,93 @@
             font-weight: 200;
         }
     }       
+}
+.slides li {
+    position: absolute;
+    top: 30%;
+    left: auto;
+    margin-left: 3rem;
+
+    h2 {
+        font-size: 6.5rem;
+        padding: 0.3rem 1rem;
+
+        b {
+            font-weight: 200;
+            background-color: rgba(black, 0.8);
+        }
+    }
+    h5 {
+        font-size: 2.64rem;
+        text-align: right;
+        padding: 0rem 1.1rem;
+
+        b {
+            background-color: $yellow;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    i {
+        height: 150px;
+        width: 150px;
+        border: 1px solid #747474;
+        border-radius: 50%;
+        line-height: 150px;
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        transition: all 0.3s ease-in;
+        cursor: default;
+        @extend .z-depth-2;
+
+        &:hover {
+            @extend .z-depth-4;
+        }
+    }
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    p {
+        color: black !important;
+        margin-bottom: 1.75rem;
+    }
+    .btn {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 0;
+    }
+
+    &.--yellow {
+        color: $yellow;
+
+        i {
+            border-color: $yellow;
+        }
+    }
+
+    &.--green {
+        color: rgb(2, 68, 2);
+        
+        i {
+            border-color: rgb(2, 68, 2);
+        }
+    }
+
+    &.--greener {
+        color: rgb(23, 107, 23);
+        
+        i {
+            border-color: rgb(23, 107, 23);
+        }
+    }
 }

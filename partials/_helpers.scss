@@ -120,6 +120,9 @@
 .margin-bottom {
 	margin-bottom: $base-margin; 
 }
+.margin-left {
+	margin-left: $base-margin; 
+}
 .margin-bottom--big {
 	margin-bottom: 4 * $base-margin; 
 }
@@ -151,11 +154,11 @@
 .text-left {
 	text-align: left;
 }
+.text-right {
+	text-align: right;
+}
 .text-align-center {
 	text-align: center;
-}
-.text-align-right {
-	text-align: right;
 }
 .text-actent {
 	color: $yellow;
