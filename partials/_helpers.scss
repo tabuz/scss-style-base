@@ -83,9 +83,18 @@
 .invert {
 	filter: invert(1);
 }
-
-
-
+.background-semi-black {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.display-inline {
+	display: inline-block;
+}
+.img-responsive {
+	width: 100%;
+}
+.round-corner {
+	border-radius: 4px;
+}
 
 // Positioning
 
@@ -124,7 +133,7 @@
 	margin-left: $base-margin; 
 }
 .margin-bottom--big {
-	margin-bottom: 4 * $base-margin; 
+	margin-bottom: 2 * $base-margin; 
 }
 .double-margin-bottom {
 	margin-bottom: 2 * $base-margin !important;

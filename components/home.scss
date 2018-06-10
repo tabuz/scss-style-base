@@ -39,46 +39,56 @@
     li {
         background-color: $primary-color;
         display: inline;
-        padding: 2rem 3rem;
+        padding: 1.5rem 2.5rem;
         transition: all 0.3s ease-in;
         margin: -3px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 200;
 
         &:hover {
             background-color: rgb(75, 75, 75);
-        }
-
-        a {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            font-weight: 200;
         }
     }       
 }
 .slides li {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: auto;
     margin-left: 3rem;
 
-    h2 {
-        font-size: 6.5rem;
-        padding: 0.3rem 1rem;
+    .black-deco {
+        font-weight: 200;
+        display: inline-block;
+        background-color: rgba(black, 0.8);
+        padding: 0.6rem 0.6rem;
+    }
 
-        b {
-            font-weight: 200;
-            background-color: rgba(black, 0.8);
-        }
+    .yellow-deco {
+        font-weight: 200;
+        display: inline-block;
+        background-color: $green;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0.6rem 0.6rem;
+        transform: translate(16px, -8px);
+    }
+
+    h2 {
+        font-size: 3.5rem;
     }
     h5 {
-        font-size: 2.64rem;
+        font-size: 1.5rem;
         text-align: right;
-        padding: 0rem 1.1rem;
-
-        b {
-            background-color: $yellow;
-            margin-right: 1rem;
-        }
     }
+}
+
+.group-banner {
+    background:
+        linear-gradient(to bottom, rgba(249,213,13,0.43) 0%,rgba(18,129,63,0.54) 100%),
+        url('/assets/img/oficina_photo-bw.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .home-container {
@@ -142,4 +152,37 @@
             border-color: rgb(23, 107, 23);
         }
     }
+}
+
+.banner {
+    background: url("/assets/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 0;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .btn {
+        margin-top: 4rem;
+        color: $black;
+        border: 5px solid $green;
+        font-weight: 600;
+        background-color: $white;
+        height: 5.2rem;
+        font-size: 1.4rem;
+        padding: 0 3rem;
+
+        &:hover {
+            background-color: rgba(0,0,0,.8);
+            color: $white;
+            border: 5px solid $yellow;
+        }
+    }
+}
+
+.info {
+    margin-top: 100px;
 }
