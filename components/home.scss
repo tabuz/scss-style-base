@@ -34,17 +34,32 @@
 .nav-wrapper-custom {
     display: flex;
     justify-content: center;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
+    height: 3rem;
+    transition: all 0.3s ease-in;
+    position: absolute;
+
+    &.--fixed {
+        text-align: right;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(0);
+    }
 
     li {
         background-color: $primary-color;
-        display: inline;
-        padding: 1.5rem 2.5rem;
-        transition: all 0.3s ease-in;
+        display: inline-block;
+        height: 3rem;
+        padding: 0 2.5rem;
         margin: -3px;
         font-size: 1rem;
+        line-height: 3rem;
         text-transform: uppercase;
         font-weight: 200;
+        transition: background-color 0.3s ease-in;
 
         &:hover {
             background-color: rgb(75, 75, 75);
